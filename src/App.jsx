@@ -1,16 +1,14 @@
+import logo from "./images/jbrand.svg";
+
 function App() {
   return (
     <div className='wrapper clear'>
       <header className='d-flex justify-between'>
         <div className='d-flex align-center'>
-          <img
-            width='80px'
-            height='80px'
-            src='https://thumbs.dreamstime.com/b/best-stores-logo-design-best-shop-logo-icon-design-best-stores-logo-design-best-shop-logo-icon-design-shopping-logo-design-134743682.jpg'
-          />
-          <div>
+          <img width='75px' height='75px' src={logo} />
+          <div className='ml-10'>
             <h3 className='text-uppercase'>Janyl</h3>
-            <p className='text-uppercase'>brand</p>
+            <p className='text-uppercase'>brend</p>
           </div>
         </div>
         <ul className='d-flex align-center'>
@@ -63,9 +61,20 @@ function App() {
           </li>
         </ul>
       </header>
-      <div className='content'>
-        <h1>All products</h1>
-      </div>
+      <section className='section mt-15 mb-15'>
+        <div className='sectionLeft'>
+          <div className='infoStyle'>
+            <h3 className='ml-20'>Стили женской одежды</h3>
+            <div className='appear-item'>
+              <span>Стили женской одежды</span>
+            </div>
+          </div>
+        </div>
+        <div className='sectionRight'>
+          <div className='individual shop'></div>
+          <div className='buyReady shop'></div>
+        </div>
+      </section>
     </div>
   );
 }
